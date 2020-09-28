@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  h1{
+      text-align: center;
+      font-size: 4em;
+  }
+   
+  body {
+    height: 100vh;  
+    /* vh means view height */
+    width: 100vw;
+    /* vw means view width  this is why everything fits in the page*/
+  }
+   
+  .image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4px;
+    height: 125vh;
+    width: 100vw;
+    perspective: 1000px;
+    border-radius: 12px;
+    
+    
+  }
+   
+  .ResetBoard {
+    background-color: rgb(204, 151, 211);
+    font-size: 10px;
+  }
+  .card.flip{
+    transform: rotateY(180deg) /* flips the card  180 degrees */
+
+  }
+  .card{
+      transform-style: preserve-3d;
+      transition: .5s; /* gives card 3-d imaginig that helps it to flip over */
+     
+      
+      
+
+  }
+  .front-face {
+    transform: rotateY(180deg); /* reveals the second card */
+  }
+
+  
+ .front-face,
+ .back-face {
+    background-color: rgb(211, 147, 206);
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute; /* positions the pictures on top of one another */ 
+
+ }
+
+ /* .card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  } */
