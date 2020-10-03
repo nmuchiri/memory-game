@@ -35,15 +35,19 @@ The user will expect to see tiles which they will click on to reveal a picture o
 description of your development plan 
 
 * Development Plan  ONE
+
 The first part was to develop a game board with cards of hats that had a front end and a back end. 
 
 * Development Plan  Two
+
 In this part, I figured out how to get the cards to flip so that the user can see a photo of a hat when they click on the game board
 
 * Development Plan  Three 
+
 Part three was spent on figuring out how to randomise the photos so they appear at different places everytime the game is refreshed. 
 
 * Development Plan  Four
+
 In this part, I focused on adding a game reset button, adding a timer and having a counter to keep score. 
 
 #### MVP
