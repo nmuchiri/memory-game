@@ -1,7 +1,7 @@
 
 # Flipping Tiles: 
 
-### App Demo: http://127.0.0.1:5502/
+### App Demo: https://nmuchiri.github.io/memory-game/
 
 ---
 
@@ -49,9 +49,11 @@ In this part, I focused on adding a game reset button, adding a timer and having
 #### MVP
 
 * MVP ONE
+
 Have a game with 6 tiles that flips cards
 
 * MVP Two
+
 Have a game with a counter and timer 
 
 * MVP Three 
@@ -68,5 +70,5 @@ Find a way for two players to go against one another
 
 It was challenging to find a way to flip the cards. I watched a CSS tutorial on how to flip images to do this.  
 
-### App Demo: http://127.0.0.1:5502/
+### App Demo: https://nmuchiri.github.io/memory-game/
 
