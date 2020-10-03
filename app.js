@@ -4,15 +4,16 @@ let cardFlipped= false
   let firstCard= null
   let secondCard= null
   let count = 0
+  let second=0
+  let minute=0
+  let hour=0
 
 score= document.querySelector(".score")
 console.log(score)
 timer= document.querySelector(".timer")
 
 cards= document.querySelectorAll(".card")
-let second=0
-let minute=0
-let hour=0
+
 // console.log(cards)
 
 function startGame(){
