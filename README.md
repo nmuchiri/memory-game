@@ -24,7 +24,7 @@ The I used CSS to put the images on top of each other and to flip the images to 
 
 #### Wireframe
 
-<img src= "Memory Game Images/Memory game wireframe.HEIC">
+<img src= "Memory Game Images/Memory game wireframe.HEIC.pdf">
 
 #### User stories
 
