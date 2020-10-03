@@ -1,7 +1,7 @@
 
 # Flipping Tiles: 
 
-### App Demo: www.linkegoeshere.com
+### App Demo: http://127.0.0.1:5502/
 
 ---
 
@@ -68,5 +68,5 @@ Find a way for two players to go against one another
 
 It was challenging to find a way to flip the cards. I watched a CSS tutorial on how to flip images to do this.  
 
-### App Demo: www.linkegoeshere.com
+### App Demo: http://127.0.0.1:5502/
 
