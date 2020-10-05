@@ -8,6 +8,11 @@ let cardFlipped= false
   let minute=0
   let hour=0
 
+  let myAudio = document.createElement("audio");
+myAudio.src = "Memory Game Images/Professor Layton and the Last Time Travel OST The Professor's Trunk (Minicar) (HQ Version).mp3";
+myAudio.play();
+// myAudio.pause();
+
 score= document.querySelector(".score")
 console.log(score)
 timer= document.querySelector(".timer")
@@ -18,9 +23,11 @@ cards= document.querySelectorAll(".card")
 
 function startGame(){
   location.reload()
-  timer.innerHTML=0
+  timer.innerHTML=60
 
 }
+
+
 
 
 function startTimer(){
@@ -88,6 +95,7 @@ startTimer()
           count++   
           score.innerHTML = count
         // alert("Congratulations!! You've found match. Your count is " + count)
+
         }
 
     }
@@ -95,6 +103,7 @@ startTimer()
     
   }
 // console.log(flipCard)
+
 
   function shuffleCards (){
     cards.forEach(cards=> {
@@ -105,6 +114,13 @@ startTimer()
 
 }
 shuffleCards()
+
+function play(){
+  let audio = document.getElementById("audio") // managed to add sound to one card will find out how to do it for all cards
+  audio.play();
+            }
+
+
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
