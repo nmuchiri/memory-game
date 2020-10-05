@@ -4,14 +4,21 @@ let cardFlipped= false
   let firstCard= null
   let secondCard= null
   let count = 0
-  let second=0
-  let minute=0
-  let hour=0
+  let second=60
+  // let minute=0
+  // let hour=0
+  
 
-  let myAudio = document.createElement("audio");
-myAudio.src = "Memory Game Images/Professor Layton and the Last Time Travel OST The Professor's Trunk (Minicar) (HQ Version).mp3";
-myAudio.play();
-// myAudio.pause();
+
+  function gameAudio(){
+    let myAudio = document.createElement("audio")
+    myAudio.src = "Memory Game Images/Professor Layton and the Last Time Travel OST The Professor's Trunk (Minicar) (HQ Version).mp3";
+    myAudio.pause()
+    myAudio.play()
+    
+  }
+  gameAudio()
+
 
 score= document.querySelector(".score")
 console.log(score)
@@ -24,7 +31,7 @@ cards= document.querySelectorAll(".card")
 function startGame(){
   location.reload()
   timer.innerHTML=60
-
+  
 }
 
 
@@ -32,16 +39,15 @@ function startGame(){
 
 function startTimer(){
   interval = setInterval(function(){
-      timer.innerHTML = minute+"mins "+second+"secs";
-      second++;
-      if(second === 60){
-          minute++;
-          second = 0;
+       timer.innerHTML = /*minute+"mins "*/ +second+"secs";
+      second--;
+      if(second === 0){
+      startGame()
       }
-      if(minute === 60){
-          hour++;
-          minute = 0;
-      }
+      // if(minute === 60){
+      //     hour++;
+      //     minute = 0;
+      // }
   },1000);
 }
 
@@ -114,9 +120,10 @@ startTimer()
 
 }
 shuffleCards()
-
+//////////////////////////////////////////////////////////
+// adding sounds to cards
 function play(){
-  let audio = document.getElementById("audio") // managed to add sound to one card will find out how to do it for all cards
+  audio = document.getElementById("audio") // managed to add sound to one card will find out how to do it for all cards
   audio.play();
             }
 
