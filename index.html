@@ -8,25 +8,23 @@
     <h1>Flipping Cards</h1>
 
 </head>
-
 <body>
   <section class="section">
     <div class="info">
       Score:<span class="score">0</span> 
+    </div>
+    <div>
+      <button id="modal-btn" class="button">Start Game</button>
     </div>
     <div class="info">
       Timer:<span class="timer">0</span>
     </div>
    
   </section>
-  
     <div class= "image-container">
         <div class= card data-id="hat7">
-            <img class="front-face" src="Memory Game Images/hat7.jpeg"value="PLAY"  onclick="play()"/>
-           <img class= "back-face" src=" Memory Game Images/hills.jpg" value="PLAY"  onclick="play()" />
-           <audio id="audio" src="Memory Game Images/Card Flip.mp3"></audio>
-          
-           
+            <img class="front-face" src="Memory Game Images/hat7.jpeg"/>
+           <img class= "back-face" src=" Memory Game Images/hills.jpg" />
         </div>
         <div class= card data-id="hat7">
             <img class="front-face" src="Memory Game Images/hat7.jpeg"/>
@@ -74,9 +72,55 @@
             <img class="back-face" src=" Memory Game Images/hills.jpg"/>
           </div>
     </div>
-   
 
-    <button class= "ResetBoard">Reset Board</button>
 
-<script src="app.js"></script></body>
+    <div>
+      <button class= "ResetBoard">Reset Board</button>
+    </div>
+    <div id="my-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Flipping Cards</h2>
+        </div>
+        <div class="modal-body">
+          <p>Welcome to Flipping Cards</p>
+          <p>This is a memory game where you match pictures of hats that are similar in as shortest time as possible. Match all cards within 30 seconds to win game.</p>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="win-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="win-close">&times;</span>
+        <h2>Congratulations!!</h2>
+      </div>
+      <div class="modal-body">
+        <p>You win!!</p>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+  <div id="lose-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>You lost!!</h2>
+      </div>
+      <div class="modal-body">
+        <p>Try Again!!</p>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+<script src="app.js">
+
+</script>
+</body>
 </html>
