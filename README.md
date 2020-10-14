@@ -24,7 +24,7 @@ The I used CSS to put the images on top of each other and to flip the images to 
 
 #### Wireframe
 
-<img src= "https://wireframepro.mockflow.com/editor.jsp?editor=off&publicid=M34cef9618b6e570ae84eb48f7fff5aa61602702993822&projectid=M5a018279f856badd1ad9b620725e43db1602702993822&perm=Owner#/page/0fbaa7b9c6494889aa5ae00a1856b3c6">
+<img src= "Memory Game Images/Memory Game wireFrame.png">
 
 #### User stories
 
