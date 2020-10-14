@@ -4,7 +4,7 @@
   let firstCard= null
   let secondCard= null
   let count = 0
-  let second=30
+  let second =30
 
   const score= document.querySelector(".score")
   const timer= document.querySelector(".timer")
@@ -41,19 +41,18 @@
   function winModal() {
     winningModal.style.display = "block"
   }
+
   function closingWin() {
     winningModal.style.display = "none"
     startGame()
   }
-  function loseModal() {
-    
-      losingingModal.style.display = "block"
-  }
 
+  function loseModal() {
+    losingModal.style.display = "block"
+  }
 
   function closeModal() {
     modal.style.display = "none"
-    
   }
 
   function outsideClick(e) {
@@ -71,10 +70,7 @@ function startGame(){
 function startTimer(){
   interval = setInterval(function(){
        timer.innerHTML = second+"secs"
-      second--;
-      if(second === 0){
-      // startGame()
-      }
+      second--
         },1200)
 }
 
@@ -112,9 +108,7 @@ function startTimer(){
 
     }if(count === 6){
       winModal()
-    }if(count < 6 && second === 0){
-      alert("you lose!")
-      loseModal()
+
     }
     
   }
