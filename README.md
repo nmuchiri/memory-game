@@ -32,15 +32,13 @@ The user will expect to see tiles which they will click on to reveal a picture o
 
 #### Development Plan 
 
-description of your development plan 
-
 * Development Plan  ONE
 
-The first part was to develop a game board with cards of hats that had a front end and a back end. 
+The first part was to develop a game board with cards of hats. The cards have a front end and a back end. 
 
 * Development Plan  Two
 
-In this part, I figured out how to get the cards to flip so that the user can see a photo of a hat when they click on the game board
+In this part, I figured out how to get the cards to flip so that the user can see a photo of a hat when they click on the game board.
 
 * Development Plan  Three 
 
@@ -62,7 +60,7 @@ Have a game with a counter and timer
 
 * MVP Three 
 
-Have a countdown timer with an overlay that says congratulations
+Have a countdown timer with an modal that says congratulations/
 
 
 #### Stretch goals
